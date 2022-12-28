@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/idRLBSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black_shade_1"
+    android:padding="4dp">
+
+    <TextView
+        android:id="@+id/TVProductPurchased"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="end"
+        android:padding="3dp"
+        android:text="Purchased"
+        android:textSize="18sp"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:visibility="visible"/>
+
+    <!--text view for displaying product name-->
+    <TextView
+        android:id="@+id/TVProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:padding="4dp"
+        android:text="Product Name"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!--image view for displaying product image-->
+    <ImageView
+        android:id="@+id/IVProduct"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/TVProductName"
+        android:layout_centerVertical="true"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_launcher_background" />
+
+    <!--text view for displaying product description-->
+    <TextView
+        android:id="@+id/TVProductPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TVProductName"
+        android:layout_margin="4dp"
+        android:layout_toRightOf="@id/IVProduct"
+        android:padding="3dp"
+        android:text="Price "
+        android:textSize="18sp"
+        android:textColor="@color/white" />
+
+    <!--text view for displaying product best suited for-->
+    <TextView
+        android:id="@+id/TVSuitedFor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TVProductPrice"
+        android:layout_margin="4dp"
+        android:layout_toRightOf="@id/IVProduct"
+        android:padding="3dp"
+        android:text="Suited for "
+        android:textSize="18sp"
+        android:textColor="@color/white" />
+
+    <!--text view for displaying product price-->
+    <TextView
+        android:id="@+id/TVProductDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TVSuitedFor"
+        android:layout_margin="4dp"
+        android:layout_toEndOf="@id/IVProduct"
+        android:layout_toRightOf="@id/IVProduct"
+        android:padding="3dp"
+        android:text="Description "
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TVProductDesc"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="1">
+
+        <!--button for editing product-->
+        <Button
+            android:id="@+id/BtnEditProduct"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:text="Edit Product"
+            android:textAllCaps="false" />
+
+        <!--button for viewing product details-->
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/BtnShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="1dp"
+            app:background="@color/white"
+            app:backgroundTint="@color/green"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_share_24" />
+
+    </LinearLayout>
+
+</RelativeLayout>

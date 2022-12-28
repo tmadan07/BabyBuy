@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black_shade_3"
+    tools:context=".SmsActivity">
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:id="@+id/share_heading"
+        android:layout_centerHorizontal="true"
+        android:text="Share the details" />
+
+    <LinearLayout
+        android:id="@+id/parent1"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/share_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ProductName: "
+            android:layout_marginTop="10dp"
+            android:textColor="@color/glue"
+            android:textSize="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/share_product_name"
+            android:text="Baby Powder"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/parent2"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/parent1"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="Price: "
+            android:textColor="@color/glue"
+            android:textSize="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/share_product_price"
+            android:text="Rs. 500"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/parent3"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/parent2"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="Details: "
+            android:textColor="@color/glue"
+            android:textSize="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/share_product_desc"
+            android:layout_height="wrap_content"
+            android:text="ggod for baby"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/send_share_button"
+        android:layout_width="350dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:layout_weight="1"
+        android:layout_below="@id/parent3"
+        android:text="Share"
+        android:textStyle="bold"
+        android:textAllCaps="false" />
+
+</RelativeLayout>
+

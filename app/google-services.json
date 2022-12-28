@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "2067734055",
+    "project_id": "babybuy-pokharaa",
+    "storage_bucket": "babybuy-pokharaa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2067734055:android:fa3354f6f715d117faf802",
+        "android_client_info": {
+          "package_name": "com.Asarfi.BabyBuy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2067734055-31bqtghbul3gqnaq2h46oo8a3455ig6k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm4fkK2ED2SZtUSOpHIvD-Slxm1H43skg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "2067734055-31bqtghbul3gqnaq2h46oo8a3455ig6k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

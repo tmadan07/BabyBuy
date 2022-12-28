@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:id="@+id/idLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textStyle="bold|italic"
+        android:text="Welcome to BabyBuy"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <!--text view for creating a new account-->
+    <TextView
+        android:id="@+id/TVNewUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idLogin"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textStyle="bold|italic"
+        android:text="where a new mother can prepare and list all of the things she needs for her new baby "
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/BtnNext"
+        android:layout_width="100dp"
+        android:layout_height="43dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/TVNewUser"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/next"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:layout_alignParentRight="true"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="242dp"
+        app:srcCompat="@drawable/baby" />
+
+</RelativeLayout>
